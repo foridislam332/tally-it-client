@@ -1,0 +1,18 @@
+@media only screen and (max-width: 36em) {
+
+    /* page loader styles */
+    .loader_el {
+        bottom: -5%;
+        left: -10%;
+        width: 80%;
+    }
+
+    br {
+        display: none;
+    }
+
+    /* solution slider styles */
+    .slide2 {
+        background-position: left center;
+    }
+}

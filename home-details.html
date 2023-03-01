@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tally IT | Home details</title>
+
+    <!-- google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="styles/fontawesome.min.css">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- responsive css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- loader -->
+    <div class="loader">
+        <img src="images/loader-img.png" alt="Tally IT" class="loader_img" />
+        <img src="images/loader-el.png" alt="element" class="loader_el" />
+    </div>
+
+    <header id="navbar" class="px-5 md:px-20 lg:px-20 fixed z-50 w-full bg-[rgba(0,0,0,.5)] md:bg-transparent">
+        <!-- navigation -->
+        <nav class="relative flex items-center justify-between py-5 md:py-16 lg:pt-5 navbar">
+
+            <!-- logo -->
+            <a href="/">
+                <img class="w-28 md:w-44 lg:w-44 hue-rotate-15" src="images/logo.png" alt="logo">
+            </a>
+
+            <!-- toggle button -->
+            <button id="open_button" class="md:hidden lg:hidden">
+                <i class="fa-solid fa-bars text-white text-3xl"></i>
+            </button>
+
+            <!-- nav items -->
+            <ul class="hidden md:flex items-center gap-8 border-b-2 pb-5 text-md text-gray-300 uppercase">
+                <li>
+                    <a href="/" class="link" onclick="currentSlide(1)">Home</a>
+                </li>
+                <li>
+                    <a href="/" class="link" onclick="currentSlide(2)">Our Solution</a>
+                </li>
+                <li>
+                    <a href="/" class="link" onclick="currentSlide(3)">Customer</a>
+                </li>
+                <div class="flex items-center gap-8">
+                    <li>
+                        <a href="/" class="link" onclick="currentSlide(4)">Contact US</a>
+                    </li>
+                    <span>
+                        O
+                    </span>
+                    <a href="/" onclick="currentSlide(5)"
+                        class="link uppercase border-2 border-gray-300 rounded-lg px-2 hover:bg-slate-600 transition-all duration-300 ease-in-out hover:text-white shadow-lg">Download</a>
+                </div>
+            </ul>
+
+            <!-- mobile responsive -->
+            <ul id="mobile_menu"
+                class="absolute top-0 -right-5 bg-white p-5 w-2/3 h-screen text-lg text-black uppercase md:hidden flex flex-col gap-6">
+                <button id="close_button" class="inline-block md:hidden lg:hidden text-right">
+                    <i class="fa-solid fa-xmark text-black text-3xl mr-2"></i>
+                </button>
+                <li class="mt-5 item">
+                    <a href="/" onclick="currentSlide(1)">Home</a>
+                </li>
+                <li class="item">
+                    <a href="/" onclick="currentSlide(2)">Our Solution</a>
+                </li>
+                <li class="item">
+                    <a href="/" onclick="currentSlide(3)">Customer</a>
+                </li>
+                <li>
+                    <a href="/" class="item" onclick="currentSlide(4)">Contact US</a>
+                </li>
+
+                <a href="/">
+                    <button onclick="currentSlide(5)"
+                        class="download_btn w-full uppercase border-2 border-gray-300 rounded-lg px-2 ">Download</button>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <img src="images/learn-more.webp" alt="learn">
+            </div>
+            <div class="px-5 md:px-36 lg:px-36 my-20 text-center flex flex-col gap-10">
+                <p class="text-lg font-medium">
+                    Managing your Businesses on the Go, means having a reliable and
+                    affordable business management platform that allows you to manage
+                    your Clothes store, along with your Hardware business and a Grocery
+                    shop all in Realtime and at the click of your hand.
+                </p>
+                <p class="text-lg font-medium">
+                    Tally.it is that business manager that delivers without failing, we pride
+                    ourselves as the Small and Medium Enterprise (Smes) champions when it
+                    comes to business analytics especially for Smes. Tally.it was built to offer
+                    business performance analysis to the small trader who despite having low
+                    sales turnover and minimal capital wants to analyse their business in
+                    Realtime.
+                </p>
+                <p class="text-lg font-medium">
+                    Affordability is usually an issue with management platforms. For this
+                    reason, we have created tailor made packages for different sizes of SMEs.
+                    Do not worry about how small your business is, we have you covered.
+                    There is no need to break a bank to investment in management systems
+                    and POS machines so that you can manage your business remotely.
+                </p>
+                <p class="text-lg font-medium">
+                    When our customers say, ours is the best business App in Kenya. It Is
+                    because of the care and attention we have crafted the tools in our
+                    platform to offer you a seamless user friendly experience while helping
+                    you manage your businesses better.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+        integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="js/animation.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
